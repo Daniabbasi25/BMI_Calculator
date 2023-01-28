@@ -11,7 +11,9 @@ const CalculatorScreen = ({navigation}) => {
   const [weight, setWeight] = useState(30);
   const [age, setAge] = useState(1);
   const onpressPrimary = () => {
-    let bmi = weight / (height * age);
+    let bmi = 0;
+    let newhight = height / 100;
+    bmi = weight / (newhight * newhight);
     let position = '';
     if (gender === 'M') {
       if (bmi < 20) {
@@ -157,7 +159,7 @@ const CalculatorScreen = ({navigation}) => {
           </View>
           <View style={styles.buttonboxes}>
             <Text style={{color: '#656678', textAlign: 'center', fontSize: 17}}>
-              Height
+              Age
             </Text>
             <Text
               style={{
