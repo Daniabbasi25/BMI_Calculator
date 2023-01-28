@@ -18,17 +18,34 @@ export default styles = StyleSheet.create({
   },
   box1: {
     flex: 1,
-    backgroundColor: '#6200EE',
+    // backgroundColor: '#6200EE',
     padding: 20,
+    flexDirection: 'row',
+    justifyContent: 'space-between',
   },
   box2: {
     flex: 1,
-    backgroundColor: '#03DAC6',
+    // backgroundColor: '#03DAC6',
     padding: 20,
   },
   box3: {
     flex: 1,
-    backgroundColor: '#2979FF',
+    // backgroundColor: '#2979FF',
     padding: 20,
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+  },
+  genderbutton: {
+    backgroundColor: '#1d1e33',
+    justifyContent: 'center',
+    paddingHorizontal: 50,
+    borderRadius: 10,
+  },
+  buttonboxes: {
+    backgroundColor: '#1d1e33',
+    justifyContent: 'space-between',
+    // paddingHorizontal: 40,
+    paddingVertical: 5,
+    borderRadius: 10,
   },
 });
